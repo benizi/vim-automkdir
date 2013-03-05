@@ -30,9 +30,14 @@ So is vim-addon-manager (VAM):
 ==============================================================================
 INSTALLATION                                         *automkdir-install* {{{1
 
-To add this plugin with Vundle: >
+To add this plugin with Vundle, add this to your .vimrc: >
 
   Bundle 'benizi/vim-automkdir'
+<
+
+Then run: >
+
+  :BundleInstall
 <
 
 With VAM: >

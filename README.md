@@ -12,6 +12,12 @@ In vimrc:
 Bundle 'benizi/vim-automkdir'
 ```
 
+Then:
+
+```vim
+:BundleInstall
+```
+
 ### With [vim-addon-manager][vam]
 
 ```vim
