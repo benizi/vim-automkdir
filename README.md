@@ -6,36 +6,19 @@ Automatically call mkdir -p as necessary when writing files.
 
 ### With [Vundle][vundle]
 
-In vimrc:
+In vimrc: `Plugin 'benizi/vim-automkdir'`
 
-```vim
-Plugin 'benizi/vim-automkdir'
-```
-
-Then:
-
-```vim
-:PluginInstall
-```
+Then: `:PluginInstall`
 
 ### With [NeoBundle][neobundle]
 
-In vimrc:
+In vimrc: `NeoBundle 'github:benizi/vim-automkdir'`
 
-```vim
-NeoBundle 'github:benizi/vim-automkdir'
-```
-
-Then:
-```vim
-:NeobundleInstall
-```
+Then: `:NeobundleInstall`
 
 ### With [vim-addon-manager][vam]
 
-```vim
-:InstallAddons github:benizi/vim-automkdir
-```
+Run: `:InstallAddons github:benizi/vim-automkdir`
 
 ## Usage
 
