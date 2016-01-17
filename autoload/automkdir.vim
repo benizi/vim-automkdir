@@ -6,11 +6,11 @@ let g:loaded_automkdir_autoload = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-fun! automkdir#Save_Current()
-  call automkdir#AsNeeded(expand('%:p:h'))
+fun! automkdir#CreateCurrent()
+  call automkdir#CreateDirectory(expand('%:p:h'))
 endf
 
-fun! automkdir#AsNeeded(dir)
+fun! automkdir#CreateDirectory(dir)
   let d = a:dir
 
   " Skip files that have schemes

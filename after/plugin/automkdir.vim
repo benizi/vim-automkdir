@@ -8,7 +8,7 @@ set cpo&vim
 
 augroup automkdir
     autocmd!
-    autocmd BufWritePre * call automkdir#Save_Current()
+    autocmd BufWritePre * call automkdir#CreateCurrent()
 augroup END
 
 let &cpo = s:save_cpo
