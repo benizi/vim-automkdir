@@ -23,7 +23,7 @@ Then:
 In vimrc:
 
 ```vim
-NeoBundle 'https://github.com/Shougo/neobundle.vim'
+NeoBundle 'github:benizi/vim-automkdir'
 ```
 
 Then:
