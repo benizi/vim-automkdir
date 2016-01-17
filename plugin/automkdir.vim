@@ -1,17 +1,14 @@
-fun! AutomkdirCurrent()
-  call AutomkdirAsNeeded(expand('%:p:h'))
-endf
+if exists("g:loaded_automkdir_plugin")
+  finish
+endif
 
-fun! AutomkdirAsNeeded(dir)
-  let d = a:dir
+let g:loaded_automkdir_plugin = 1
 
-  " Skip files that have schemes
-  if d =~ '^[a-z]\+:/'
-    return
-  endif
+let s:save_cpo = &cpo
+set cpo&vim
 
-  if !isdirectory(d)
-    call system('mkdir -p '.shellescape(d))
-    echom 'Created directory:' d
-  end
-endf
+let g:automkdir_silent =
+            \get(g:,'automkdir_silent',0)
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
