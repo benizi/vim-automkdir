@@ -10,6 +10,15 @@ fun! automkdir#CreateCurrent()
   call automkdir#CreateDirectory(expand('%:p:h'))
 endf
 
+fun! s:Mkdirp(dir)
+  " Use internal `mkdir -p` if it exists
+  if exists('*mkdir')
+    return mkdir(a:dir, 'p')
+  end
+  " Fall back to shelling out to `mkdir -p`
+  return system('mkdir -p '.shellescape(a:dir))
+endf
+
 fun! automkdir#CreateDirectory(dir)
   let d = a:dir
 
@@ -19,7 +28,7 @@ fun! automkdir#CreateDirectory(dir)
   endif
 
   if !isdirectory(d)
-    call system('mkdir -p '.shellescape(d))
+    call s:Mkdirp(d)
     if !g:automkdir_silent
         echom 'Created directory:' d
     endif

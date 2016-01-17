@@ -69,4 +69,5 @@ It's automatic.
 ==============================================================================
 CAVEATS                                              *automkdir-caveats* {{{1
 
-Requires a mkdir command that accepts the -p argument.  (POSIX)
+Requires a Vim with a built-in |mkdir()|, or an external `mkdir` command that
+accepts the -p argument.  (POSIX)
