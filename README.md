@@ -4,20 +4,7 @@ Automatically call mkdir -p as necessary when writing files.
 
 ## Installation
 
-### With [NeoBundle](https://github.com/Shougo/neobundle.vim)
-
-In vimrc:
-
-```vim
-NeoBundle 'https://github.com/Shougo/neobundle.vim'
-```
-
-Then:
-```vim
-:NeobundleInstall
-```
-
-### With [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
+### With [Vundle][vundle]
 
 In vimrc:
 
@@ -29,6 +16,19 @@ Then:
 
 ```vim
 :PluginInstall
+```
+
+### With [NeoBundle][neobundle]
+
+In vimrc:
+
+```vim
+NeoBundle 'https://github.com/Shougo/neobundle.vim'
+```
+
+Then:
+```vim
+:NeobundleInstall
 ```
 
 ### With [vim-addon-manager][vam]
@@ -60,4 +60,6 @@ Within `vim` run:
 :help automkdir
 ```
 
+[vundle]: https://github.com/VundleVim/Vundle.vim
+[neobundle]: https://github.com/Shougo/neobundle.vim
 [vam]: https://github.com/MarcWeber/vim-addon-manager
