@@ -26,6 +26,5 @@ fun! automkdir#CreateDirectory(dir)
   end
 endf
 
-
 let &cpo = s:save_cpo
 unlet s:save_cpo
