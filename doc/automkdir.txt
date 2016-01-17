@@ -19,28 +19,44 @@ PLUGIN MANAGERS                                     *automkdir-managers* {{{1
 
 If you don't already use a Vim plugin manager, install one now.
 
-Vundle is easy:
+Vundle:
 
-    https://github.com/gmarik/vundle#readme
+    https://github.com/VundleVim/Vundle.vim#readme
 
-So is vim-addon-manager (VAM):
+or NeoBundle:
+
+    https://github.com/Shougo/neobundle.vim#readme
+
+or vim-addon-manager (VAM):
 
     https://github.com/MarcWeber/vim-addon-manager
 
 ==============================================================================
 INSTALLATION                                         *automkdir-install* {{{1
 
-To add this plugin with Vundle, add this to your .vimrc: >
+To install, do one of the following:
 
-  Bundle 'benizi/vim-automkdir'
+1. Using Vundle, add this to your .vimrc: >
+
+  Plugin 'benizi/vim-automkdir'
 <
 
 Then run: >
 
-  :BundleInstall
+  :PluginInstall
 <
 
-With VAM: >
+2. Using NeoBundle, add this to your .vimrc: >
+
+  NeoBundle 'github:benizi/vim-automkdir'
+<
+
+Then run: >
+
+  :NeobundleInstall
+<
+
+3. Using VAM: >
 
   :InstallAddons github:benizi/vim-automkdir
 <
